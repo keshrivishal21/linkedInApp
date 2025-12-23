@@ -12,11 +12,6 @@ public class PostsServiceApplication {
 		SpringApplication.run(PostsServiceApplication.class, args);
 	}
 
-
-    @Bean
-    public ModelMapper modelMapper() {
-        return new ModelMapper();
-    }
 }
 
 
