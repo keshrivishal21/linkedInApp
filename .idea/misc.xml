@@ -6,6 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/usersService/pom.xml" />
         <option value="$PROJECT_DIR$/postsService/pom.xml" />
+        <option value="$PROJECT_DIR$/connectionsService/connectionsService/pom.xml" />
+        <option value="$PROJECT_DIR$/connectionsService/pom.xml" />
+        <option value="$PROJECT_DIR$/APIGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/discoveryService/pom.xml" />
+        <option value="$PROJECT_DIR$/notification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/uploaderService/pom.xml" />
       </list>
     </option>
   </component>

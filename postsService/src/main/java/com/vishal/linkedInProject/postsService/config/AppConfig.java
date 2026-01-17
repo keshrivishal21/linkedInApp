@@ -1,5 +1,6 @@
 package com.vishal.linkedInProject.postsService.config;
 
+import feign.form.spring.SpringFormEncoder;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
@@ -11,5 +12,10 @@ public class AppConfig {
     @Bean
     public ModelMapper modelMapper(){
         return new ModelMapper();
+    }
+
+    @Bean
+    public SpringFormEncoder feignFormEncoder() {
+        return new SpringFormEncoder();
     }
 }

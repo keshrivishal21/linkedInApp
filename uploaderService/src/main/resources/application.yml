@@ -1,0 +1,27 @@
+spring.application.name: uploader-service
+server.servlet.context-path: /uploads
+server.port: 9050
+
+eureka.client.service-url.defaultZone : http://localhost:8761/eureka
+
+cloudinary:
+  cloud-name: ${CLOUDINARY_CLOUD_NAME}
+  api-key: ${CLOUDINARY_API_KEY}
+  api-secret: ${CLOUDINARY_API_SECRET}
+
+gcloud:
+  storage-bucket-name: linkedin-project2
+#  storage-access-key: >
+#    {
+#      "type": "service_account",
+#      "project_id": "spring-boot-project-483818",
+#      "private_key_id": "bdb8eb8c2c5d1c642f61d230eb2193c9e2b18ff3",
+#      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDmq6YO4wlCNg4i\nrWRl9Y3GpYqo0J5Eg6IGJ2CENEubMxAGCxErGWhRRpW3Hj4F7fbDA2M9G4FKwiJA\nDs5fCuatt496+1M8FJ85B8iwqx2HalTmzub9YzEKFNRwlx5uSn6m22ckESb8S4vK\nMf6jbgkVNQZMP2wH+d0k/PQBdr0xWZ60oa0w4J82G2w4RWJn4AifU2v4bITjBwz/\nUm65MFvJTP4S+3dVLgiuZgpU6vKkYEq5uJ4K1B9G4MzFapfa6qE8FUDom8w8iPhf\nTgni2s06wPP91jqWK9XsXaZtmN4EAjEqHlgBT6qF0rTEtHUmXLzqrfC6cH2bhPWt\nem2B3UUVAgMBAAECggEAAwnTReJtMotSO9gzWJl3rNxs22TmFMp0FacqoQssTMbL\nKP031GzBAEMRAUi7ceoMxExU4A7u8MxmVZgsVTmoSLUAhZLuaX3vC/oDhXo3iRtY\nM3MZvVAzaunT04jWDIdcLDf7H5E/RXb8SCVI8J+oLHiWlOYH9wHuTQis8SD+hHoe\nkzp2oY5wqVx5ITPjIsFM4FEot6SYzTi9pwT/2g7X7m0emKNtu9yhbbKXYZ4UJ16S\nUMv2hl5ROi1P7O6MdJt+BsOb9/8DOL35zEpOCm/4scy2bLB+3qVZxCQBNqoTzw7X\n7C2oyIKcuPYObCDQXdxQH3Crt4pFrMoZ4tQ629fx+QKBgQD24tOroLZpt4B9PK3G\nwECXVX/tFnmgkzM+qFHAeoZz+s7KkYCHuZ7xijMlqui3KQXXvLBI7C3pMgJnJx1m\nqpA+7iNwbwYBzstHSeSBYL76SIRx3dSYqUroNWN81yfg/TNHTAKiC47giNN3qufV\nybg5Rf+STx7YMWgHrEarZ0wrrQKBgQDvL5QSUAOXo3x3H3hemL1t/dLkb9So6BhY\n5slDZO9zVEw5qCxQH7a+E/Tj3FxN4jDNefKDuoj460PvqnfH8K8Cqfv59hGvg9mO\nTtbKDIWBnDBubunRCQ9dhKGJQA7WSUPo5bhgbZd/wQKu/zALLnmqyZbSAztXQRtS\nHL9OISYsCQKBgDF3UyfhJItb+/+bx8m5vXdU5zPOvAHjXHIicXbaVdQpHYPS0Wjg\nVStaIFNcwhHow0XthXim8a/2mCqo2Kg4ZnxlZG5joFV+ZJZdBM6zXrBxFTBnXPBV\ngy+xesSJq3DV6o9PeHuVS0RLxesFMDxSlXnMP5/GAI0aoRhgeSxgnw9lAoGAVYHX\n2JgcQKikhV2NxZurFNhJ/XpxNxUKJzYSO3KpG7zGJ1KUzOwZg2hVAuSzZvB26+4t\noaQc9Yf92H9DpQnJNxWXzCuI9QsYyoQqyz6gt84jjkc+dYlcod0Zdpyc8URt76O4\nP1jOcVCJ6g+2mDi8LC83KMsY+r9+yeMXDRJSuCkCgYEAy1okcqAhphaVryUg3wuH\niWeIXnT1qJvNq6LTPNUWtjCryu2M6ERMCa1scFYGKLhsYK0KylnzJdJxn3nOQ1tI\ne7MMjD6aTrWZ/vdFY31udanMmXeHpXCHxoEu2IlmTgKZHnF/ZF3mF4QzROtn9Tex\nzLWsu2gU9tBMCuVc5g25eiA=\n-----END PRIVATE KEY-----\n",
+#      "client_email": "linkedin-project-account@spring-boot-project-483818.iam.gserviceaccount.com",
+#      "client_id": "103506244882190111753",
+#      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+#      "token_uri": "https://oauth2.googleapis.com/token",
+#      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+#      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/linkedin-project-account%40spring-boot-project-483818.iam.gserviceaccount.com",
+#      "universe_domain": "googleapis.com"
+#    }
