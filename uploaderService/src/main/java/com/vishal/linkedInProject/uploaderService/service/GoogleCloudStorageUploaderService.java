@@ -14,20 +14,21 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class GoogleCloudStorageUploaderService implements UploaderService{
 
-    private final Storage storage;
-
-    @Value("${gcloud.storage-bucket-name}")
-    private String bucketName;
-
-    @Override
+//    private final Storage storage;
+//
+//    @Value("${gcloud.storage-bucket-name}")
+//    private String bucketName;
+//
+//    @Override
     public String upload(MultipartFile file) {
-        String fileName = UUID.randomUUID() + "-" + file.getOriginalFilename();
-        BlobInfo blobInfo = BlobInfo.newBuilder(bucketName,fileName).build();
-        try {
-            storage.create(blobInfo,file.getBytes());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return String.format("https://storage.googleapis.com/%s/%s",bucketName,fileName);
-    }
+//        String fileName = UUID.randomUUID() + "-" + file.getOriginalFilename();
+//        BlobInfo blobInfo = BlobInfo.newBuilder(bucketName,fileName).build();
+//        try {
+//            storage.create(blobInfo,file.getBytes());
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//        return String.format("https://storage.googleapis.com/%s/%s",bucketName,fileName);
+        return null;
+   }
 }

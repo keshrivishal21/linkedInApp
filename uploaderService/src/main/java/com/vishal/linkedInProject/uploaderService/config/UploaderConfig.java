@@ -33,12 +33,12 @@ public class UploaderConfig {
         );
         return new Cloudinary(config);
     }
-
-//    @Value("${gcloud.storage-access-key}")
+//
+//  @Value("${gcloud.storage-access-key}")
 //    private String gcloudAccessKey;
-
-    @Bean
-    public Storage storage() {
-        return StorageOptions.getDefaultInstance().getService();
-    }
+//
+//    @Bean
+//    public Storage storage() {
+//        return StorageOptions.getDefaultInstance().getService();
+//    }
 }
