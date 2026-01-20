@@ -2,3 +2,4 @@
 *.json
 .gcp/
 .env
+cloudinary-secret.yml
