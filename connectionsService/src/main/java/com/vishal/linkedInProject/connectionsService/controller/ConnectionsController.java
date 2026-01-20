@@ -19,28 +19,30 @@ public class ConnectionsController {
 
     @GetMapping("/{userId}/first-degree")
     public ResponseEntity<List<Person>>getFirstDegreeConnections(@PathVariable Long userId){
-        log.info("Fetching first-degree connections for user with ID: {}", userId);
         List<Person> firstDegreeConnections = connectionsService.getFirstDegreeConnectionsOfUser(userId);
         return ResponseEntity.ok(firstDegreeConnections);
     }
 
+    @GetMapping("/{userId}/second-degree")
+    public ResponseEntity<List<Person>> getSecondDegreeConnections(@PathVariable Long userId){
+        List<Person> secondDegreeConnections = connectionsService.getSecondDegreeConnectionsOfUser(userId);
+        return ResponseEntity.ok(secondDegreeConnections);
+    }
+
     @PostMapping("/request/{userId}")
     public ResponseEntity<Void> sendConnectionRequest(@PathVariable Long userId){
-        log.info("Sending connection request to user with ID: {}", userId);
         connectionsService.sendConnectionRequest(userId);
         return ResponseEntity.ok().build();
     }
 
     @PostMapping("/accept/{userId}")
     public ResponseEntity<Void> acceptConnectionRequest(@PathVariable Long userId){
-        log.info("accepting connection request from user with ID: {}", userId);
         connectionsService.acceptConnectionRequest(userId);
         return ResponseEntity.ok().build();
     }
 
     @PostMapping("/reject/{userId}")
     public ResponseEntity<Void> rejectConnectionRequest(@PathVariable Long userId){
-        log.info("Rejecting connection request from user with ID: {}", userId);
         connectionsService.rejectConnectionRequest(userId);
         return ResponseEntity.ok().build();
     }

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class UserConsumerService {
     private final PersonService personService;
 
-    @KafkaListener(topics = "user_created_topic", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "user_created_topic")
     public void handlePersonCreated(UserCreatedEvent userCreatedEvent){
         log.info("Received UserCreatedEvent for userId: {} with name: {}", userCreatedEvent.getUserId(), userCreatedEvent.getName());
         personService.createPerson(userCreatedEvent.getUserId(), userCreatedEvent.getName());

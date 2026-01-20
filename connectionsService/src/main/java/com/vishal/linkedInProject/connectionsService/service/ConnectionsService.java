@@ -21,6 +21,11 @@ public class ConnectionsService {
         return personRepository.getFirstDegreeConnections(userId);
     }
 
+    public List<Person> getSecondDegreeConnectionsOfUser(Long userId){
+        log.info("Fetching second degree connections for user with ID: {}", userId);
+        return personRepository.getSecondDegreeConnections(userId);
+    }
+
 
     public void sendConnectionRequest(Long receiverID) {
         Long senderId = AuthContextHolder.getCurrentUserId();

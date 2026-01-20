@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.vishal.linkedInProject</groupId>
 	<artifactId>connectionsService</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>connection-service</name>
 	<description>Connection service for linkedIn Project</description>
 	<url/>
@@ -112,8 +112,9 @@
                 <version>3.4.4</version>
                 <configuration>
                     <to>
-                        <image>docker.io/vishalkeshri140/linkedin-app-${project.name}:${project.version}</image>
+                        <image>docker.io/vishalkeshri140/linkedin-app-${project.name}</image>
                         <tags>
+                            <tag>${project.version}</tag>
                             <tag>latest</tag>
                         </tags>
                     </to>

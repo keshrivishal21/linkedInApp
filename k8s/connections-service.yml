@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: connections-service
-        image: vishalkeshri140/linkedin-app-connection-service
+        image: vishalkeshri140/linkedin-app-connection-service:0.0.2
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "400Mi"

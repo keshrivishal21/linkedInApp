@@ -1,6 +1,5 @@
 package com.vishal.linkedInProject.usersService.event;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data
